@@ -1,6 +1,7 @@
 # AET API C# Wrapper
 This repo provides a C# wrapper for the AET API, documented at https://developers.aetrust.com/?version=latest.
-The wrapper takes the inputs and constructs the signature and all other necessary formatting for the AET API
+The wrapper takes the inputs and constructs the signature and all other headers required by the AET API,
+it passes the payload for `PUT` & `POST` requests as provided and outputs the response from the API without modifying it.
 
 ## Getting started
 Import the 3 class files `AetrustHttpClient.cs`, `AetrustSignature.cs` & `AmericanEstateTrust.cs` to your project  
