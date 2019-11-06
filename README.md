@@ -13,7 +13,7 @@ var myOrigin = "http://example.com";
 
 var body = "{\"data\":{\"type\":\"users\",\"attributes\":{\"email\":\"johndoe+2@example.com\",\"password\":\"ystt^Yj3PL\",\"confirmPassword\": \"ystt^Yj3PL\"}}}";
 
-var client = new AetrustHttpClient(new HttpClient(), apiKey, apiSecret, myOrigin);
+var client = new AetrustHttpClient(new HttpClient(), apiSecret, apiKey, myOrigin);
 var request = client.CreateRequest(aetApiUrl, new HttpMethod("POST"), body);
 var bodyToSend = request.Content.ReadAsStringAsync().Result;
 var response = client.SendRequestAsync(request).Result;
